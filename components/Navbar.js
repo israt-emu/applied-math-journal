@@ -1,5 +1,13 @@
+import LowerNav from "./LowerNav";
+import UpperNav from "./UpperNav";
+
 const Navbar = () => {
-  return <div>navbar </div>;
+  return (
+    <>
+      <UpperNav />
+      <LowerNav />
+    </>
+  );
 };
 
 export default Navbar;
