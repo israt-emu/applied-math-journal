@@ -4,7 +4,7 @@ import {useState} from "react";
 const LowerNav = () => {
   const [active, setActive] = useState("home");
   return (
-    <header className="px-4 pt-1 dark:bg-gray-800 dark:text-gray-100 border-b border-t border-gray-200">
+    <header className="px-4 pt-1">
       <div className="container flex justify-between h-14 mx-auto">
         <ul className="items-stretch hidden space-x-3 lg:flex">
           <li className="flex">
