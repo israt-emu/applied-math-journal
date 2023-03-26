@@ -8,37 +8,37 @@ const LowerNav = () => {
       <div className="container flex justify-between h-14 mx-auto">
         <ul className="items-stretch hidden space-x-3 lg:flex">
           <li className="flex">
-            <Link href="#" className={`flex items-center font-medium px-4 text-black ${active === "home" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("home")}>
+            <Link href="#" className={`flex items-center font-medium px-4 ${active === "home" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("home")}>
               Home
             </Link>
           </li>
           <li className="flex">
-            <Link href="#" className={`flex items-center font-medium px-4 text-black ${active === "publications" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("publications")}>
+            <Link href="#" className={`flex items-center font-medium px-4 ${active === "publications" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("publications")}>
               Publications
             </Link>
           </li>
           <li className="flex">
-            <Link href="#" className={`flex items-center font-medium px-4 text-black ${active === "research" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("research")}>
+            <Link href="#" className={`flex items-center font-medium px-4 ${active === "research" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("research")}>
               Research Areas
             </Link>
           </li>
           <li className="flex">
-            <Link href="#" className={`flex items-center font-medium px-4 text-black ${active === "events" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("events")}>
+            <Link href="#" className={`flex items-center font-medium px-4 ${active === "events" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("events")}>
               Events
             </Link>
           </li>
           <li className="flex">
-            <Link href="#" className={`flex items-center font-medium px-4 text-black ${active === "About" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("About")}>
+            <Link href="#" className={`flex items-center font-medium px-4 ${active === "About" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("About")}>
               About Us
             </Link>
           </li>
           <li className="flex">
-            <Link href="#" className={`flex items-center font-medium px-4 text-black ${active === "People" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("People")}>
+            <Link href="#" className={`flex items-center font-medium px-4 ${active === "People" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("People")}>
               People
             </Link>
           </li>
           <li className="flex">
-            <Link href="#" className={`flex items-center font-medium px-4 text-black ${active === "Contact" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("Contact")}>
+            <Link href="#" className={`flex items-center font-medium px-4 ${active === "Contact" ? "border-b-4 border-secondary text-secondary" : "border-b-4 border-transparent"}`} onClick={() => setActive("Contact")}>
               Contact
             </Link>
           </li>
