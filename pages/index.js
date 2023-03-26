@@ -16,7 +16,7 @@ export default function Home() {
 
      
 
-      <Layout> <JNSection /></Layout>
+      <JNSection />
 
     </div>
   );
