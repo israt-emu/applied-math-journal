@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --primary-color: rgb(38, 99, 150);
   --secondary-color: rgb(199, 167, 41);
@@ -10,7 +9,12 @@
   --dark-color: rgb(24, 47, 75);
   --small-bg-color: rgb(201, 216, 230);
 }
-
+.banner {
+  background-image: linear-gradient(rgba(15, 34, 58, 0.9), rgba(199, 167, 41, 0.4)), url("../assets/images/mathematical-sciences-banner-1160.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* 
 @media (prefers-color-scheme: dark) {
   html {
