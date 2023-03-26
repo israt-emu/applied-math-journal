@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import JNSection from "../components/home/JNSection";
+import PresidentSection from "../components/home/PresidentSection";
 import Layout from "../components/layout";
 import styles from "../styles/Home.module.css";
 
@@ -17,6 +18,7 @@ export default function Home() {
      
 
       <JNSection />
+      <PresidentSection/>
 
     </div>
   );
