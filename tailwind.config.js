@@ -12,6 +12,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-  darkMode:"class",
+  plugins: [require("daisyui")],
+  darkMode: "class",
 };

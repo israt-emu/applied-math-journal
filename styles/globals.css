@@ -15,6 +15,19 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* //navigation  */
+.nav-link {
+  @apply flex items-center font-medium px-4 border-b-4;
+}
+.nav-link-active {
+  @apply border-secondary text-secondary;
+}
+.dropdown-menu {
+  @apply dropdown-content menu bg-gray-200 shadow-lg border-t-4 border-secondary flex-col;
+}
+.dropdown-link {
+  @apply cursor-pointer text-dark font-semibold flex items-center;
+}
 /* 
 @media (prefers-color-scheme: dark) {
   html {

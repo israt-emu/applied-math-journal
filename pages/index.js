@@ -14,9 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <JNSection />
-      <PresidentSection/>
-
+      <div className="container w-full flex items-center justify-center">
+        <JNSection />
+        <div className="divider lg:divider-horizontal"></div>
+        <PresidentSection />
+      </div>
     </div>
   );
 }

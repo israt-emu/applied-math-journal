@@ -2,72 +2,26 @@ import Image from "next/image";
 
 const JNSection = () => {
   return (
-    <div>
-      <section className="bg-gray-100 text-gray-800">
-        <div className="container max-w-5xl px-4 py-12 mx-auto">
-          <div className="grid gap-4 mx-4 sm:grid-cols-12">
-            <div className="col-span-12 sm:col-span-3">
-              <div className="text-center sm:text-left mb-14">
-                <Image
-                  className="rounded my-3"
-                  src="/jamalNazrulIslam.jpg"
-                  alt="Jamal Nazrul Islam Photo"
-                  width={200}
-                  height={400}
-                />
-                <h3 className="text-3xl font-semibold">Jamal Nazrul Islam</h3>
-                <span className="text-sm font-bold tracking-wider uppercase text-gray-600">
-                  Mathematical physicist and cosmologist.
-                </span>
-              </div>
-            </div>
-            <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
-              <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300">
-                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-600">
-                  <h3 className="text-xl font-semibold tracking-wide">
-                    Donec porta enim vel{" "}
-                  </h3>
-                  <time className="text-xs tracking-wide uppercase text-gray-600">
-                    Dec 2020
-                  </time>
-                  <p className="mt-3">
-                    Pellentesque feugiat ante at nisl efficitur, in mollis orci
-                    scelerisque. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.
-                  </p>
-                </div>
-                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-600">
-                  <h3 className="text-xl font-semibold tracking-wide">
-                    Aliquam sit amet nunc ut
-                  </h3>
-                  <time className="text-xs tracking-wide uppercase text-gray-600">
-                    Jul 2019
-                  </time>
-                  <p className="mt-3">
-                    Morbi vulputate aliquam libero non dictum. Aliquam sit amet
-                    nunc ut diam aliquet tincidunt nec nec dui. Donec mollis
-                    turpis eget egestas sodales.
-                  </p>
-                </div>
-                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-blue-600">
-                  <h3 className="text-xl font-semibold tracking-wide">
-                    Pellentesque habitant morbi
-                  </h3>
-                  <time className="text-xs tracking-wide uppercase text-gray-600">
-                    Jan 2016
-                  </time>
-                  <p className="mt-3">
-                    Suspendisse tincidunt, arcu nec faucibus efficitur, justo
-                    velit consectetur nisl, sit amet condimentum lacus orci nec
-                    purus. Mauris quis quam suscipit, vehicula felis id,
-                    vehicula enim.
-                  </p>
-                </div>
-              </div>
-            </div>
+    <div className="px-4 py-12 mx-auto w-1/2">
+      <div className="grid gap-4 mx-4 sm:grid-cols-12">
+        <div className="col-span-12 sm:col-span-5">
+          <div className="text-center sm:text-left mb-14">
+            <Image className="rounded my-3" src="/jamalNazrulIslam.jpg" alt="Jamal Nazrul Islam Photo" width={200} height={400} />
           </div>
         </div>
-      </section>
+
+        <div className="relative col-span-12 px-4 sm:col-span-7 mt-2">
+          <div>
+            <h3 className="text-3xl font-semibold">Jamal Nazrul Islam</h3>
+            <h3 className="text-sm font-bold uppercase text-gray-600">Mathematical physicist and cosmologist.</h3>
+            <h3 className="text-sm font-bold uppercase text-gray-600"> Former professor of University of Chittagong</h3>
+          </div>
+        </div>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem dolores esse ullam, maiores eos beatae ipsum rem modi? Fugiat recusandae sunt impedit animi facilis voluptas eos inventore voluptates repellat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vitae harum exercitationem quos sunt, consequuntur nemo, omnis, quidem at possimus corrupti quibusdam?
+        Molestias voluptatibus modi cum vel voluptas ullam sequi.
+      </div>
     </div>
   );
 };

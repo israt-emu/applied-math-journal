@@ -1,0 +1,95 @@
+import Link from "next/link";
+import {useState} from "react";
+import {IoMdArrowDropdown} from "react-icons/io";
+const LowerNav = () => {
+  const [active, setActive] = useState("home");
+  return (
+    <header className="px-4 pt-1">
+      <div className="container flex justify-between h-14 mx-auto">
+        <ul className="items-stretch hidden space-x-3 lg:flex">
+          <li className="flex">
+            <Link href="/" className={`nav-link ${active === "home" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("home")}>
+              Home
+            </Link>
+          </li>
+          <li className="flex">
+            <Link href="#" className={`nav-link ${active === "About" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("About")}>
+              About Us
+            </Link>
+          </li>
+          <li className="flex">
+            <Link href="#" className={`nav-link ${active === "People" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("People")}>
+              People
+            </Link>
+          </li>
+
+          <li className="flex">
+            <Link href="#" className={`nav-link ${active === "research" ? "nav-link-active" : " border-transparent"}`} onClick={() => setActive("research")}>
+              Research Areas
+            </Link>
+          </li>
+          <li className="flex dropdown dropdown-hover dropdown-bottom">
+            <Link href="#" tabIndex={0} className={`nav-link ${active === "publications" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("publications")}>
+              <span>Publications</span>
+              <span>
+                <IoMdArrowDropdown />
+              </span>
+            </Link>
+
+            <ul tabIndex={0} className="w-40 dropdown-menu">
+              <li className="flex dropdown dropdown-hover dropdown-right">
+                <Link href="#" tabIndex={1} className="dropdown-link">
+                  Journals
+                  <span>
+                    <IoMdArrowDropdown />
+                  </span>
+                </Link>
+                <ul tabIndex={1} className="w-50 dropdown-menu -mt-8">
+                  <li className="flex">
+                    <Link href="#" className="dropdown-link">
+                      International Journal of Mathematical Physics
+                    </Link>
+                  </li>
+                  <li className="flex border-t border-gray-50">
+                    <Link href="#" className="dropdown-link">
+                      International Journal of Mathematical Biology
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="flex border-t border-gray-50">
+                <Link href="#" className="dropdown-link">
+                  Books
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li className="flex">
+            <Link href="#" className={`nav-link ${active === "fee" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("fee")}>
+              Publication Processing Fee
+            </Link>
+          </li>
+          <li className="flex">
+            <Link href="#" className={`nav-link ${active === "events" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("events")}>
+              Events
+            </Link>
+          </li>
+
+          <li className="flex">
+            <Link href="/contact" className={`nav-link ${active === "Contact" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("Contact")}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+
+        <button title="Open menu" type="button" className="p-4 lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 dark:text-gray-100">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+  );
+};
+
+export default LowerNav;
