@@ -1,7 +1,18 @@
 import Link from "next/link";
-import {useState} from "react";
+import {useRouter} from "next/router";
+import {useEffect, useState} from "react";
 import {IoMdArrowDropdown} from "react-icons/io";
 const LowerNav = () => {
+  const router = useRouter();
+  const path = router?.pathname;
+  useEffect(() => {
+    if (path === "/") {
+      setActive("home");
+    } else {
+      const value = path.split("/")[1];
+      setActive(value);
+    }
+  }, [path]);
   const [active, setActive] = useState("home");
   return (
     <header className="px-4 pt-1">
@@ -13,14 +24,29 @@ const LowerNav = () => {
             </Link>
           </li>
           <li className="flex">
-            <Link href="#" className={`nav-link ${active === "About" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("About")}>
+            <Link href="#" className={`nav-link ${active === "about" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("about")}>
               About Us
             </Link>
           </li>
-          <li className="flex">
-            <Link href="#" className={`nav-link ${active === "People" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("People")}>
+          <li className="flex dropdown dropdown-hover dropdown-bottom">
+            <Link tabIndex={0} href="#" className={`nav-link ${active === "people" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("people")}>
               People
+              <span>
+                <IoMdArrowDropdown />
+              </span>
             </Link>
+            <ul tabIndex={0} className="dropdown-menu">
+              <li className="flex">
+                <Link href="/president" className="dropdown-link" onClick={() => setActive("president")}>
+                  President
+                </Link>
+              </li>
+              <li className="flex border-t border-gray-50">
+                <Link href="/team" className="dropdown-link">
+                  Our Team
+                </Link>
+              </li>
+            </ul>
           </li>
 
           <li className="flex">
@@ -38,7 +64,7 @@ const LowerNav = () => {
 
             <ul tabIndex={0} className="w-40 dropdown-menu">
               <li className="flex dropdown dropdown-hover dropdown-right">
-                <Link href="#" tabIndex={1} className="dropdown-link">
+                <Link href="#" tabIndex={1} className="dropdown-link" onClick={() => setActive("journals")}>
                   Journals
                   <span>
                     <IoMdArrowDropdown />
@@ -46,18 +72,18 @@ const LowerNav = () => {
                 </Link>
                 <ul tabIndex={1} className="w-50 dropdown-menu -mt-8">
                   <li className="flex">
-                    <Link href="#" className="dropdown-link">
+                    <Link href="#" className="dropdown-link" onClick={() => setActive("journal-physics")}>
                       International Journal of Mathematical Physics
                     </Link>
                   </li>
                   <li className="flex border-t border-gray-50">
-                    <Link href="#" className="dropdown-link">
+                    <Link href="#" className="dropdown-link" onClick={() => setActive("journal-biology")}>
                       International Journal of Mathematical Biology
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li className="flex border-t border-gray-50">
+              <li className="flex border-t border-gray-50" onClick={() => setActive("books")}>
                 <Link href="#" className="dropdown-link">
                   Books
                 </Link>
@@ -76,7 +102,7 @@ const LowerNav = () => {
           </li>
 
           <li className="flex">
-            <Link href="/contact" className={`nav-link ${active === "Contact" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("Contact")}>
+            <Link href="/contact" className={`nav-link ${active === "contact" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("contact")}>
               Contact
             </Link>
           </li>

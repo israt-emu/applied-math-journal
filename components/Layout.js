@@ -9,9 +9,8 @@ const Layout = ({children}) => {
   return (
     <>
       <Navbar />
-      <Banner />
 
-      <main className="flex items-start">{children}</main>
+      <main className="w-full">{children}</main>
       <Footer />
     </>
   );

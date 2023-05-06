@@ -22,9 +22,7 @@ const PresidentSection = () => {
           <div>
             <h3 className="text-3xl font-semibold">Dr Hanif Murad</h3>
             <p className="text-sm font-bold tracking-wider uppercase text-gray-600">Professor</p>
-            <p className="text-sm font-bold tracking-wider uppercase text-gray-600" F>
-              President of AMath Journal society
-            </p>
+            <p className="text-sm font-bold tracking-wider uppercase text-gray-600">President of AMath Journal society</p>
             <span className="text-sm font-bold tracking-wider uppercase text-gray-600">Noakhali Science & Technology University</span>
           </div>
         </div>
