@@ -24,12 +24,12 @@ const LowerNav = () => {
             </Link>
           </li>
           <li className="flex">
-            <Link href="#" className={`nav-link ${active === "about" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("about")}>
+            <Link href="/about" className={`nav-link ${active === "about" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("about")}>
               About Us
             </Link>
           </li>
           <li className="flex dropdown dropdown-hover dropdown-bottom">
-            <Link tabIndex={0} href="#" className={`nav-link ${active === "people" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("people")}>
+            <Link tabIndex={0} href="/people" className={`nav-link ${active === "people" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("people")}>
               People
               <span>
                 <IoMdArrowDropdown />
@@ -50,12 +50,12 @@ const LowerNav = () => {
           </li>
 
           <li className="flex">
-            <Link href="#" className={`nav-link ${active === "research" ? "nav-link-active" : " border-transparent"}`} onClick={() => setActive("research")}>
+            <Link href="/research" className={`nav-link ${active === "research" ? "nav-link-active" : " border-transparent"}`} onClick={() => setActive("research")}>
               Research Areas
             </Link>
           </li>
           <li className="flex dropdown dropdown-hover dropdown-bottom">
-            <Link href="#" tabIndex={0} className={`nav-link ${active === "publications" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("publications")}>
+            <Link href="/publications" tabIndex={0} className={`nav-link ${active === "publications" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("publications")}>
               <span>Publications</span>
               <span>
                 <IoMdArrowDropdown />
@@ -64,7 +64,7 @@ const LowerNav = () => {
 
             <ul tabIndex={0} className="w-40 dropdown-menu">
               <li className="flex dropdown dropdown-hover dropdown-right">
-                <Link href="#" tabIndex={1} className="dropdown-link" onClick={() => setActive("journals")}>
+                <Link href="/journals" tabIndex={1} className="dropdown-link" onClick={() => setActive("journals")}>
                   Journals
                   <span>
                     <IoMdArrowDropdown />
@@ -72,31 +72,31 @@ const LowerNav = () => {
                 </Link>
                 <ul tabIndex={1} className="w-50 dropdown-menu -mt-8">
                   <li className="flex">
-                    <Link href="#" className="dropdown-link" onClick={() => setActive("journal-physics")}>
+                    <Link href="/journal-physics" className="dropdown-link" onClick={() => setActive("journal-physics")}>
                       International Journal of Mathematical Physics
                     </Link>
                   </li>
                   <li className="flex border-t border-gray-50">
-                    <Link href="#" className="dropdown-link" onClick={() => setActive("journal-biology")}>
+                    <Link href="/journal-biology" className="dropdown-link" onClick={() => setActive("journal-biology")}>
                       International Journal of Mathematical Biology
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="flex border-t border-gray-50" onClick={() => setActive("books")}>
-                <Link href="#" className="dropdown-link">
+                <Link href="/books" className="dropdown-link">
                   Books
                 </Link>
               </li>
             </ul>
           </li>
           <li className="flex">
-            <Link href="#" className={`nav-link ${active === "fee" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("fee")}>
+            <Link href="/fee" className={`nav-link ${active === "fee" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("fee")}>
               Publication Processing Fee
             </Link>
           </li>
           <li className="flex">
-            <Link href="#" className={`nav-link ${active === "events" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("events")}>
+            <Link href="/events" className={`nav-link ${active === "events" ? "nav-link-active" : "border-transparent"}`} onClick={() => setActive("events")}>
               Events
             </Link>
           </li>

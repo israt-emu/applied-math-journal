@@ -3,6 +3,7 @@ import Banner from "../Banner";
 import Image from "next/image";
 import Education from "./Education";
 import Award from "./Award";
+import presidentImage from "../../assets/images/hanif.jpg";
 
 const Hanif = () => {
   return (
@@ -11,7 +12,7 @@ const Hanif = () => {
 
       <div className="w-10/12 mx-auto flex container justify-center">
         <div className="w-4/12 text-center sm:text-left mb-14">
-          <Image className="rounded -mt-10" src="/president.jpeg" alt="President Photo" width={200} height={400} />
+          <Image className="rounded -mt-10" src={presidentImage} alt="President Photo" width={200} height={400} />
           <div>
             <h3 className="text-xl font-semibold">Contact Information</h3>
             <p>

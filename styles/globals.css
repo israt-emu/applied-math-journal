@@ -27,6 +27,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.banner-journal {
+  background-image: linear-gradient(rgba(15, 34, 58, 0.9), rgba(199, 167, 41, 0.4)), url("../assets/images/journals.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* //navigation  */
 .nav-link {
   @apply flex items-center font-medium px-4 border-b-4;

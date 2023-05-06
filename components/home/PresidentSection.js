@@ -1,4 +1,5 @@
 import Image from "next/image";
+import presidentImage from "../../assets/images/hanif.jpg";
 
 const PresidentSection = () => {
   return (
@@ -6,7 +7,7 @@ const PresidentSection = () => {
       <div className="grid gap-4 mx-4 sm:grid-cols-12">
         <div className="col-span-12 sm:col-span-5">
           <div className="text-center sm:text-left mb-14">
-            <Image className="rounded my-3" src="/president.jpeg" alt="President Photo" width={200} height={400} />
+            <Image className="rounded my-3" src={presidentImage} alt="President Photo" width={200} height={400} />
             <div>
               <h3 className="text-xl font-semibold">Contact Information</h3>
               <p>
